@@ -10,6 +10,9 @@
     "test": "mocha --reporter spec",
     "start": "node src/server.js"
   },
+  "engines": {
+    "node": "10.13.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
