@@ -4,6 +4,7 @@ const PokemonFastAttacksModel = require("../models/fastAttacks.model");
 findAll = (req, res, next)=>{
     PokemonFastAttacksModel.find(function (err, fastAttacks) {
         if (err) {
+            console.log(err)
             return next(err);
         }
         return res.json(fastAttacks);
