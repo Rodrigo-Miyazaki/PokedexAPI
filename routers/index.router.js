@@ -7,6 +7,9 @@ var pokemonTypesRouter =  require("./pokemonType.router");
 var pokemonFastAttacksRouter = require("./pokemonFastAttacks.router");
 var pokemonSpecialAttacksRouter = require("./pokemonSpecialAttacks.router");
 
+router.get('/', (req, res) =>
+    res.send('API Works'),
+);
 router.use("/api", pokemonRouter);
 router.use("/api", loginRouter);
 router.use("/api", registerRouter);

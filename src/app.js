@@ -12,12 +12,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 app.use(routers);
 
-// Serve only the static files form the dist directory
-app.use(express.static('./dist/PokedexWeb'));
 
-app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/PokedexWeb/'}),
-);
 
 
 
