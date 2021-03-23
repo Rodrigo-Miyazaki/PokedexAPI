@@ -9,5 +9,5 @@ Utilize o comando npm install para instalar as dependências.
 Utilize o comando npm test para executar os teste unitários.
 
 ### Executando Aplicação
-Utilize o comando ng serve -o para executar a aplicação.
+Utilize o comando node src/server.js para executar a aplicação.
 
